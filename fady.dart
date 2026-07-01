@@ -29,9 +29,9 @@ class PremiumUser extends User with PremiumAssetRenter {
   PremiumUser({required String name, required int id}) : super(name: name, id: id);
 }
 Future<List<Book>> fetchOnlineBooksCatalog() async {
-  print("\n⏳ Loading library catalog from cloud server...");
+  print("\n Loading library catalog from cloud server...");
   await Future.delayed(Duration(seconds: 3));
-  print("✅ Catalog loaded successfully!\n");
+  print(" Catalog loaded successfully!\n");
   return [
     Book(title: "Dart Programming Guide", author: "Google Developers", isbn: "111-ABC"),
     Book(title: "Flutter UI Deep Dive", author: "Remi Rousselet", isbn: "222-DEF"),
